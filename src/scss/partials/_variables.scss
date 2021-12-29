@@ -1,0 +1,35 @@
+//Colors.......
+$color_hotpink: hsl(330, 100%, 69%);
+$color_dark: hsl(250, 8%, 28%);
+$color_light: hsl(0, 0%, 96%);
+// $color_orange: hsl(37, 91%, 58%);
+$color_orange: #F9B208;
+$color_red: hsl(0, 100%, 50%);
+$color_primary: hsl(250, 69%, 61%);
+$color_aqua: hsl(180, 100%, 50%);
+$color_primary_two: #20c997;
+$color_red_alt: hsl(8, 89%, 63%);
+
+// Gradient Color....
+$color_gradi: linear-gradient(45deg, $color_primary_two, $color_primary);
+
+//font-family
+$primary_font_family: "Poppins", sans-serif; //body primary font family
+$font_quantico: "Quantico", sans-serif; 
+$font_chela_one: "Chela One", cursive; // for h4 tag
+$font_oswald: 'Oswald', sans-serif; //section header title font
+$font_didact_gothic: 'Didact Gothic', sans-serif; // for h3 tag
+
+//heading font size
+$heading_h1_font_size: 3rem; //1.5rem past value...... section hero header
+$heading_h2_font_size: 1.9rem; // section header
+$heading_h3_font_size: 1.3rem; //section inner header
+$heading_h4_font_size: 1.031rem; //1.063rem; past value..
+
+// Others Font Size
+$font_size_normal: 1rem;
+$font_size_small: 0.906rem;
+$font_size_smaller: 0.781rem;
+$font_size_big: 1.375rem;
+$font_size_bigger: 1.5rem;
+$font_size_biggest: 1.625rem;

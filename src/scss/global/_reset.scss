@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  // --color-body: hsl(250, 60%, 99%);
+  --color-body: hsl(0, 0%, 93%);
+  --color-secondary: hsl(208, 7%, 46%);
+  --color-card-body: hsl(0, 0%, 95%);
+  --color-card-secondary: linear-gradient(145deg, #eeeeee, #cecece);
+  --color-card-secondary-alt: hsl(0, 0%, 81%);
+  --color-text-primary: hsl(250, 11%, 7%);
+  --color-text-second: hsl(250, 8%, 25%);
+  --color-text-third: hsl(250, 8%, 35%);
+  --color-section-title: hsl(215, 6%, 14%);
+  --svg-path-fill: #ecf3ff;
+  --color-transparent: #83a2f881;
+  --gPhoto-overlay-BGcolor: #000000ad;
+  --gPhoto-overlay-textColor: hsl(0, 0%, 100%);
+  // --color-input: hsl(0, 0%, 93%);
+  --color-input: hsl(0deg 0% 88%);
+  --input-inner-shadow: 1px 4px 2px -3px rgba(211, 211, 211, 0.7) inset,
+    -1px -3px 3px -2px rgba(255, 255, 255, 0.705) inset;
+  --color-text-input: hsl(0, 0%, 36%);
+  --color-header-shadow: #00776b;
+}
+
+html[data-theme="true"] {
+  // --color-body: hsl(214, 10%, 14%);
+  --color-body: hsl(217, 10%, 25%);
+  --color-secondary: hsl(0, 0%, 96%);
+  --color-card-body: hsl(0, 0%, 17%);
+  --color-card-secondary: linear-gradient(145deg, #1e2024, #23272b);
+  --color-card-secondary-alt: hsl(220, 9%, 13%);
+  --color-text-primary: hsl(250, 10%, 100%);
+  --color-text-second: hsl(250, 10%, 90%);
+  --color-text-third: hsl(250, 10%, 80%);
+  --color-section-title: #c4cfde;
+  --svg-path-fill: hsl(240, 3%, 17%);
+  --color-transparent: #ff777781;
+  --gPhoto-overlay-BGcolor: #ffffffb3;
+  --gPhoto-overlay-textColor: hsla(0, 0%, 9%, 0.678);
+  --color-input: hsl(216, 9%, 11%);
+  --input-inner-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset,
+    -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+  --color-text-input: hsl(0, 0%, 73%);
+  --color-header-shadow: #000000;
+}
+
+span,
+label,
+p,
+li,
+a {
+  color: var(--color-text-third);
+  font-size: $font_size_normal;
+}
+
+ul,
+li,
+p,
+span,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: unset;
+  font-weight: 400;
+}
+
+// h6 tag only used for section sub title................
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+caption {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #6c757d;
+  text-align: left;
+}
+
+/* Here h1 tag Only Used in Hero Header*/
+h1 {
+  font-size: $heading_h1_font_size;
+  color: var(--color-text-primary);
+  @include smallDevice {
+    font-size: 2.4rem;
+  }
+}
+/* Here h1 tag Only Used in Hero Header*/
+
+/* Here h2 tag Only used for Section Tittle*/
+h2 {
+  font-size: $heading_h2_font_size;
+  color: var(--color-text-second);
+}
+/* Here h2 tag Only used for Section Tittle*/
+
+/* Here h3 tag Only used for section inner div*/
+h3 {
+  color: var(--color-text-second);
+  font-size: $heading_h3_font_size;
+  font-weight: 500;
+}
+/* Here h3 tag Only used for section inner div*/
+
+/* Here h4 tag Only used for section inner div -2 */
+h4 {
+  font-size: $heading_h4_font_size;
+  color: var(--color-text-second);
+}
+/* Here h4 tag Only used for section inner div -2 */

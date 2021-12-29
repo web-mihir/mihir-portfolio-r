@@ -1,0 +1,104 @@
+/*========= Team Section Start =========*/
+#testimonials__section {
+  // background: linear-gradient(90deg, #2e15ff, #8986b7, #00adff);
+  background: linear-gradient(90deg, teal, #217689);
+  overflow: hidden;
+  position: relative;
+
+  .container {
+    > h2 {
+      color: $color_light;
+
+      &::before {
+        background-color: $color_light;
+      }
+    }
+
+    > span {
+      color: $color_light;
+    }
+  }
+}
+
+.testimonials__body {
+  width: 100%;
+}
+
+.testimonials__slider {
+  border: 1px solid #333333;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+  background-color: #00000087;
+  border-radius: 5px;
+  position: relative;
+}
+
+.testimonials__slide {
+  flex-wrap: wrap;
+  display: flex;
+  animation: slide 1s ease;
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}
+
+.testimonials__person_photo {
+  flex: 50%;
+  width: 100%;
+  @include display_flex_center;
+  > img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 4px;
+  }
+}
+
+.testimonials__person_info {
+  flex: 50%;
+  width: 100%;
+  @include display_flex_center;
+  flex-direction: column;
+  > h4 {
+    color: $color_light;
+    margin: 0.625rem 0 1.875rem 0;
+    font-size: $heading_h4_font_size;
+  }
+  > span {
+    display: block;
+    font-size: $font_size_normal;
+    color: $color_primary_two;
+  }
+}
+
+.testimonials__person_social {
+  @include display_flex_center;
+  padding: 10% 0 0 0;
+  width: 100%;
+}
+
+.carousel .control-dots {
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px !important;
+  height: 12px !important;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 960px) {
+  .carousel .control-dots {
+    top: 0 !important;
+  }
+}
+/***** Team Section End ******/
